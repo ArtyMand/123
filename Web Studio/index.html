@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Web Studio</title>
+</head>
+<body>
+  <!-- sprite -->
+  <svg style="display: none;">
+      <symbol id="facebook" viewBox="0 0 20 20">
+        <g clip-path="url(#clip0_1_482)">
+            <path d="M13.3308 3.32083H15.1567V0.140833C14.8417 0.0975 13.7583 0 12.4967 0C9.86416 0 8.06082 1.65583 8.06082 4.69917V7.5H5.15582V11.055H8.06082V20H11.6225V11.0558H14.41L14.8525 7.50083H11.6217V5.05167C11.6225 4.02417 11.8992 3.32083 13.3308 3.32083Z" />
+        </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 20 20" >
+        <g clip-path="url(#clip0_1_492)">
+            <path d="M19.9804 5.88005C19.9336 4.81738 19.7617 4.0868 19.5156 3.45374C19.2616 2.78176 18.8709 2.18014 18.359 1.68002C17.8589 1.1721 17.2533 0.777435 16.5891 0.527447C15.9524 0.281274 15.2256 0.109427 14.163 0.0625732C13.0924 0.0117516 12.7525 0 10.0371 0C7.32173 0 6.98185 0.0117516 5.91521 0.0586052C4.85253 0.105459 4.12195 0.277459 3.48904 0.523479C2.81692 0.777435 2.2153 1.16814 1.71517 1.68002C1.20726 2.18014 0.812743 2.78573 0.562603 3.44992C0.31643 4.0868 0.144583 4.81341 0.0977294 5.87609C0.0469078 6.9467 0.0351562 7.28658 0.0351562 10.002C0.0351562 12.7173 0.0469078 13.0572 0.0937614 14.1239C0.140615 15.1865 0.312615 15.9171 0.558787 16.5502C0.812743 17.2221 1.20726 17.8238 1.71517 18.3239C2.2153 18.8318 2.82088 19.2265 3.48508 19.4765C4.12195 19.7226 4.84856 19.8945 5.91139 19.9413C6.97788 19.9883 7.31791 19.9999 10.0333 19.9999C12.7487 19.9999 13.0885 19.9883 14.1552 19.9413C15.2179 19.8945 15.9484 19.7226 16.5813 19.4765C17.9254 18.9568 18.9881 17.8941 19.5078 16.5502C19.7538 15.9133 19.9258 15.1865 19.9727 14.1239C20.0195 13.0572 20.0313 12.7173 20.0313 10.002C20.0313 7.28658 20.0273 6.9467 19.9804 5.88005ZM18.1794 14.0457C18.1364 15.0225 17.9723 15.5499 17.8356 15.9015C17.4995 16.7728 16.808 17.4643 15.9367 17.8004C15.5851 17.9372 15.0538 18.1012 14.0809 18.1441C13.026 18.1911 12.7096 18.2027 10.0411 18.2027C7.37255 18.2027 7.05221 18.1911 6.00113 18.1441C5.02438 18.1012 4.49693 17.9372 4.1453 17.8004C3.71171 17.6402 3.31704 17.3862 2.9967 17.0541C2.6646 16.7298 2.41065 16.3391 2.2504 15.9055C2.11365 15.5539 1.94959 15.0225 1.90671 14.0497C1.8597 12.9948 1.8481 12.6783 1.8481 10.0097C1.8481 7.34122 1.8597 7.02087 1.90671 5.96995C1.94959 4.99319 2.11365 4.46575 2.2504 4.11412C2.41065 3.68038 2.6646 3.28586 3.00067 2.96536C3.32483 2.63327 3.71553 2.37931 4.14927 2.21921C4.5009 2.08247 5.03231 1.9184 6.0051 1.87537C7.05999 1.82851 7.37652 1.81676 10.0449 1.81676C12.7174 1.81676 13.0337 1.82851 14.0848 1.87537C15.0616 1.9184 15.589 2.08247 15.9407 2.21921C16.3742 2.37931 16.7689 2.63327 17.0893 2.96536C17.4213 3.28967 17.6753 3.68038 17.8356 4.11412C17.9723 4.46575 18.1364 4.99701 18.1794 5.96995C18.2263 7.02484 18.238 7.34122 18.238 10.0097C18.238 12.6783 18.2263 12.9908 18.1794 14.0457Z" />
+            <path d="M10.0371 4.8642C7.20074 4.8642 4.89941 7.16537 4.89941 10.0019C4.89941 12.8385 7.20074 15.1396 10.0371 15.1396C12.8737 15.1396 15.1749 12.8385 15.1749 10.0019C15.1749 7.16537 12.8737 4.8642 10.0371 4.8642ZM10.0371 13.3346C8.19702 13.3346 6.70442 11.8422 6.70442 10.0019C6.70442 8.16165 8.19702 6.66921 10.0371 6.66921C11.8774 6.66921 13.3698 8.16165 13.3698 10.0019C13.3698 11.8422 11.8774 13.3346 10.0371 13.3346Z" />
+            <path d="M16.5775 4.6611C16.5775 5.32346 16.0404 5.86052 15.3779 5.86052C14.7155 5.86052 14.1785 5.32346 14.1785 4.6611C14.1785 3.99858 14.7155 3.46167 15.3779 3.46167C16.0404 3.46167 16.5775 3.99858 16.5775 4.6611Z" />
+        </g>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 20 20">
+        <g clip-path="url(#clip0_1_476)">
+            <path d="M19.995 20V19.9992H20V12.6642C20 9.07587 19.2275 6.31171 15.0325 6.31171C13.0158 6.31171 11.6625 7.41837 11.11 8.46754H11.0517V6.64671H7.07416V19.9992H11.2158V13.3875C11.2158 11.6467 11.5458 9.96337 13.7017 9.96337C15.8258 9.96337 15.8575 11.95 15.8575 13.4992V20H19.995Z" />
+            <path d="M0.330017 6.64746H4.47668V20H0.330017V6.64746Z" />
+            <path d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z" />
+        </g>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 20 20" >
+        <g clip-path="url(#clip0_1_486)">
+            <path d="M20 3.79875C19.2562 4.125 18.4637 4.34125 17.6375 4.44625C18.4875 3.93875 19.1363 3.14125 19.4413 2.18C18.6488 2.6525 17.7737 2.98625 16.8412 3.1725C16.0887 2.37125 15.0162 1.875 13.8462 1.875C11.5762 1.875 9.74875 3.7175 9.74875 5.97625C9.74875 6.30125 9.77625 6.61375 9.84375 6.91125C6.435 6.745 3.41875 5.11125 1.3925 2.6225C1.03875 3.23625 0.83125 3.93875 0.83125 4.695C0.83125 6.115 1.5625 7.37375 2.6525 8.1025C1.99375 8.09 1.3475 7.89875 0.8 7.5975C0.8 7.61 0.8 7.62625 0.8 7.6425C0.8 9.635 2.22125 11.29 4.085 11.6712C3.75125 11.7625 3.3875 11.8062 3.01 11.8062C2.7475 11.8062 2.4825 11.7912 2.23375 11.7362C2.765 13.36 4.2725 14.5537 6.065 14.5925C4.67 15.6837 2.89875 16.3412 0.98125 16.3412C0.645 16.3412 0.3225 16.3262 0 16.285C1.81625 17.4562 3.96875 18.125 6.29 18.125C13.835 18.125 17.96 11.875 17.96 6.4575C17.96 6.27625 17.9537 6.10125 17.945 5.9275C18.7587 5.35 19.4425 4.62875 20 3.79875Z" />
+        </g>
+      </symbol>
+      <symbol class="asa1" id="customer__1" width="170" height="92" viewBox="0 0 170 92"     fill="transparent">
+            <g class="customer__2">
+             <rect  x="0.5" y="0.5" width="169" height="91" stroke="#AFB1B8"  />
+             <path  d="M70 23L77.0078 29.6341L64 29.6265V61.8137H98V49.507L105 56.1338V23H70ZM97.6924 48.7283L77.8226 29.918H97.6924V48.7283ZM91.5231 57.1055H69.3801V35.4579H70.9453V55.6397H91.5231V57.1055ZM74.6089 66.0991L73.791 67.7837L72.9731 66.0991H72.2871L73.481 68.3452V69.6538H74.1011V68.3452L75.2925 66.0991H74.6089ZM75.6367 69.6538L75.9248 68.8262H77.3018L77.5923 69.6538H78.2368L76.8916 66.0991H76.3374L74.9946 69.6538H75.6367ZM76.6133 66.8535L77.1284 68.3281H76.0981L76.6133 66.8535ZM79.8701 68.2427C79.7806 68.3794 79.7358 68.5299 79.7358 68.6943C79.7358 68.9938 79.8408 69.2371 80.0508 69.4243C80.2624 69.6099 80.5439 69.7026 80.8955 69.7026C81.2471 69.7026 81.5498 69.6074 81.8037 69.417L82.0039 69.6538H82.6924L82.1699 69.0361C82.375 68.7562 82.4775 68.3973 82.4775 67.9595H81.9624C81.9624 68.1987 81.9128 68.416 81.8135 68.6113L81.1274 67.8008L81.3691 67.625C81.54 67.5013 81.6629 67.3776 81.7378 67.2539C81.8127 67.1286 81.8501 66.9919 81.8501 66.8438C81.8501 66.6191 81.7671 66.4312 81.6011 66.2798C81.4367 66.1268 81.2251 66.0503 80.9663 66.0503C80.6798 66.0503 80.452 66.1317 80.2827 66.2944C80.1134 66.4556 80.0288 66.6753 80.0288 66.9536C80.0288 67.0675 80.0557 67.1855 80.1094 67.3076C80.1647 67.4297 80.2616 67.5778 80.3999 67.752C80.1362 67.9408 79.9596 68.1043 79.8701 68.2427ZM81.4741 69.0288C81.3 69.1623 81.1128 69.229 80.9126 69.229C80.7352 69.229 80.5936 69.1777 80.4878 69.0752C80.382 68.9727 80.3291 68.8392 80.3291 68.6748C80.3291 68.4844 80.4268 68.3151 80.6221 68.167L80.6978 68.1133L81.4741 69.0288ZM80.8369 67.4541C80.6693 67.2474 80.5854 67.0757 80.5854 66.939C80.5854 66.8201 80.6196 66.7217 80.688 66.6436C80.7563 66.5654 80.8483 66.5264 80.9639 66.5264C81.0713 66.5264 81.16 66.5597 81.23 66.6265C81.3 66.6916 81.335 66.7705 81.335 66.8633C81.335 67.0033 81.2845 67.118 81.1836 67.2075L81.1079 67.2686L80.8369 67.4541ZM86.623 69.3853C86.8672 69.172 87.0072 68.8758 87.043 68.4966H86.4277C86.3952 68.7505 86.3179 68.932 86.1958 69.041C86.0737 69.1501 85.8914 69.2046 85.6489 69.2046C85.3836 69.2046 85.1818 69.1037 85.0435 68.9019C84.9067 68.7 84.8384 68.4071 84.8384 68.0229V67.708C84.8416 67.3288 84.9149 67.0415 85.0581 66.8462C85.203 66.6493 85.4097 66.5508 85.6782 66.5508C85.9093 66.5508 86.0843 66.6077 86.2031 66.7217C86.3236 66.834 86.3984 67.0179 86.4277 67.2734H87.043C87.0039 66.8844 86.8647 66.5833 86.6255 66.3701C86.3862 66.1569 86.0705 66.0503 85.6782 66.0503C85.3869 66.0503 85.1297 66.1195 84.9067 66.2578C84.6854 66.3962 84.5153 66.5931 84.3965 66.8486C84.2777 67.1042 84.2183 67.3996 84.2183 67.7349V68.0669C84.2231 68.394 84.2842 68.6813 84.4014 68.9287C84.5186 69.1761 84.6846 69.3674 84.8994 69.5024C85.1159 69.6359 85.3657 69.7026 85.6489 69.7026C86.0542 69.7026 86.3789 69.5968 86.623 69.3853ZM90.2534 68.8872C90.3739 68.6235 90.4341 68.3175 90.4341 67.9692V67.7715C90.4325 67.4248 90.3706 67.1213 90.2485 66.8608C90.1265 66.5988 89.9531 66.3986 89.7285 66.2603C89.5055 66.1203 89.2492 66.0503 88.9595 66.0503C88.6698 66.0503 88.4126 66.1211 88.188 66.2627C87.965 66.4027 87.7917 66.6053 87.668 66.8706C87.5459 67.1359 87.4849 67.4419 87.4849 67.7886V67.9888C87.4865 68.3289 87.5483 68.6292 87.6704 68.8896C87.7941 69.1501 87.9683 69.3511 88.1929 69.4927C88.4191 69.6326 88.6763 69.7026 88.9644 69.7026C89.2557 69.7026 89.5129 69.6326 89.7358 69.4927C89.9604 69.3511 90.133 69.1493 90.2534 68.8872ZM89.5918 66.8779C89.7415 67.0879 89.8164 67.3898 89.8164 67.7837V67.9692C89.8164 68.3696 89.7423 68.674 89.5942 68.8823C89.4478 69.0907 89.2378 69.1948 88.9644 69.1948C88.6942 69.1948 88.4826 69.0882 88.3296 68.875C88.1782 68.6618 88.1025 68.3599 88.1025 67.9692V67.7642C88.1058 67.3817 88.1823 67.0863 88.332 66.8779C88.4834 66.668 88.6925 66.563 88.9595 66.563C89.2329 66.563 89.4437 66.668 89.5918 66.8779Z"fill="#AFB1B8" />
+           </g>
+        </symbol>
+</svg>
+   <!-- Header -->
+    <header class="header">
+        <section class="container">
+           <section class="logo"></section>
+            <section class="header__inner">
+
+                <img class="header__logo" src="img//header/WebStudiologo.png" alt="WebStudio">
+
+                <nav>
+                    <a class="Nav__link" href="#">Студия</a>
+                    <a class="Nav__link" href="#">Портфолио</a>
+                    <a class="Nav__link" href="#">Контакты</a>
+                </nav>
+                <info>
+                    <a class="e__mail" href="#">info@devstudio.com </a>
+                     <tel class="contact">+38 096 111 11 11</tel>
+
+                </info>
+             </section>
+        </section>
+    </header>
+    <!-- Main -->
+<main>
+    <!-- Intro -->
+    <section class="intro">
+            <section class="container">
+                <span class="intro_text">Эффективные решения <p>для вашего бизнеса</p></span>
+                <a class="btn btn--blue" href="#">Заказать услугу</a>
+            </section>
+        </section>
+    <!-- Features -->
+    <section class="features">
+        <h2>Наши преимущества</h2>
+            <section class="container">
+                <section class="features_inner">
+
+                    <section class="features__item">
+                        <img class="features_icon" src="/img/Main/features/features__1.png" alt="">
+                        <h3 class="features__name">
+                            Внимание к деталям
+                        </h3>
+                        <selection class="features__text">
+                            Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        </selection>
+                    </section>
+
+                    <section class="features__item">
+                        <img class="features_icon" src="/img/Main/features/features__2.png" alt="">
+                        <h3 class="features__name">
+                            Пунктуальность
+                        </h3 >
+                        <selection class="features__text">
+                            Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                        </selection>
+                    </section>
+
+                    <section class="features__item">
+                        <img class="features_icon" src="/img/Main/features/features__3.png" alt="">
+                        <h3 class="features__name">
+                            Планирование
+                        </h3>
+                        <selection class="features__text">
+                            Равным образом консультация с широким активом в значительной степени обуславливает.
+                        </selection>
+                    </section>
+
+                    <section class="features__item">
+                        <img class="features_icon" src="/img/Main/features/features__4.png" alt="">
+                        <h3 class="features__name">
+                            Современные технологии
+                        </h3>
+                        <selection class="features__text">
+                            Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                        </selection>
+                    </section>
+                </section>
+            </section>
+        </section>
+    <!-- Example -->
+    <section class="example">
+        <h2>Чем мы занимаемся</h2>
+            <section class="container">
+                  <section class="example_inner">
+
+                        <selection class="example__icon">
+                            <img src="/img/Main/example/example__1.png" alt="example" width="370" height="294" class="example_img">
+                        </selection>
+
+                        <selection class="example__icon">
+                            <img src="/img/Main/example/example__2.png" alt="example" width="370" height="294" class="example_img2">
+                        </selection>
+
+                        <selection class="example__icon">
+                            <img src="/img/Main/example/example__3.png" alt="example" width="370" height="294" class="example_img">
+                        </selection>
+                   </section>
+            </section>
+    </section>
+    <!-- Team -->
+    <section class="team">
+       <h2 class="team_title">Наша команда</h2>
+        <section class="container">
+            <section class="team__inner">
+               <div class="team__item">
+                    <img src="/img/Main/team/team__1.jpg" alt="" width="270px" height="260px" class="team__photo">
+                    <div class="team__name">Игорь Демьяненко</div>
+                    <div class="team__prof">Product Designer</div>
+                    <section class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="team__item">
+                    <img src="/img/Main/team/team__2.jpg" alt="" width="270px" height="260px" class="team__photo">
+                    <div class="team__name">Ольга Репина</div>
+                    <div class="team__prof">Frontend Developer</div>
+                    <section class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="team__item">
+                    <img src="/img/Main/team/team__3.jpg" alt="" width="270px" height="260px" class="team__photo">
+                    <div class="team__name">Николай Тарасов</div>
+                    <div class="team__prof">Marketing</div>
+                    <section class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+
+                <div class="team__item">
+                    <img src="/img/Main/team/team__4.jpg" alt="" width="270px" height="260px" class="team__photo">
+                    <div class="team__name">Михаил Ермаков</div>
+                    <div class="team__prof">UI Designer</div>
+                    <section class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- Customers -->
+    <section class="customers">
+       <h2 class="customers_title">Постоянные клиенты</h2>
+        <section class="container">
+            <a class="customers__item" href="#" target="_blank">
+                <svg>
+                    <use class="customers__icon" xlink:href="#customer__1"></use>
+                </svg>
+            </a>
+            <a href="#" target="_blank">
+                <img class="cl12" src="/img/Main/customers/Client%201.svg" alt="">
+            </a>
+
+        </section>
+    </section>
+
+</main>
+</body>
+</html>
